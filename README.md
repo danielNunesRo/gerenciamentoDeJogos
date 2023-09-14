@@ -43,6 +43,12 @@ npm start
 GET http://localhost:8001/jogos
     </code></pre>
 
+ <h3>GET /jogos/id</h3>
+
+  <pre><code>
+GET http://localhost:8001/jogos/id
+    </code></pre>
+
    <h3>POST /jogos</h3>
 
    <pre><code>
