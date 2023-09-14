@@ -29,6 +29,21 @@ app.get("/games", (req, res) => {
     });
 });
 
+app.get('/games/:id', (req,res) => {
+    const gameId = req.params.id;
+
+    Game.findByPk(gameId).then(jogo => {
+        if(!jogo) {
+            return res.status(404).json({ message: 'Jogo não encontrado' });
+        }
+        res.json(jogo);
+    }).catch(erro => {
+        console.error(err);
+        res.status(500).json({ message: 'Erro interno do servidor'})
+    });
+
+})
+
 app.post('/games', (req, res) => {
     const { nome, ano, price } = req.body;
 
