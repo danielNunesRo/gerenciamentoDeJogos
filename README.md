@@ -37,16 +37,22 @@ npm start
 
    <h2>Exemplo de Requisições</h2>
 
-  <h3>GET /jogos</h3>
+  <h3>GET /games</h3>
 
   <pre><code>
-GET http://localhost:8001/jogos
+GET http://localhost:8001/games
     </code></pre>
 
- <h3>GET /jogos/id</h3>
+ <h3>GET /games/id</h3>
 
   <pre><code>
-GET http://localhost:8001/jogos/id
+GET http://localhost:8001/games/id
+    </code></pre>
+
+ <h3>GET /game/nome</h3>
+
+  <pre><code>
+GET http://localhost:8001/game/nome
     </code></pre>
 
    <h3>POST /jogos</h3>
